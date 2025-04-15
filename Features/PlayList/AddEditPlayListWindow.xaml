@@ -29,9 +29,10 @@
         </ResourceDictionary>
     </Window.Resources>
 
-    <Grid>
+    <Grid x:Name="Base">
         <Grid.Background>
-            <ImageBrush ImageSource="{StaticResource BackgroundPicture}" Stretch="Fill"/>
+            <SolidColorBrush Color="Gray" Opacity="0.7"/>
+            <!-- Halbtransparente graue Farbe -->
         </Grid.Background>
 
         <Grid.ColumnDefinitions>
@@ -62,9 +63,9 @@
         </ListBox>
 
         <DockPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center">
-            <Button  Width="{Binding ElementName=CancelButton,Path=ActualWidth}" Style="{StaticResource ButtonStyle}" Content=" OK " 
+            <Button  Width="{Binding ElementName=CancelButton,Path=ActualWidth}" Content=" OK " 
                      Command="{Binding AcceptCommand}"/>
-            <Button x:Name="CancelButton" Style="{StaticResource ButtonStyle}" Content=" Abbrechen " 
+            <Button x:Name="CancelButton" Content=" Abbrechen " 
                      Command="{Binding CancelCommand}"/>
         </DockPanel>
     </Grid>

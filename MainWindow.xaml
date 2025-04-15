@@ -160,7 +160,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <TabControl Grid.Row="1" Grid.Column="0" Background="Transparent">
+                <TabControl Grid.Row="1" Grid.Column="0" Background="Gray">
                     <TabItem>
                         <TabItem.Header>
                             <TextBlock><Run Language="de-de" Text="Beispielsounds"/></TextBlock>
